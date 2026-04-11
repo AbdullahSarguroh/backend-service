@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Docker Check 1') {
             steps {
-                sh 'docker --version'
-                sh 'docker ps'
+                sh 'python --version'
+                
             }
         }
         stage('Docker Check 2 another stage') {

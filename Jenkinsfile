@@ -7,5 +7,11 @@ pipeline {
                 sh 'docker ps'
             }
         }
+         stage('Docker Check') {
+            steps {
+                sh 'docker --version'
+                sh 'docker ps'
+            }
+        }
     }
 }
